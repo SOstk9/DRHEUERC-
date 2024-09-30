@@ -10,7 +10,7 @@ namespace Schneckenrennen.Models
     {
         private string _name;
         private int _maxAnzahlSchnecken;
-        private List<Rennschnecke>  _teilnehmendeSchnecken;
+        private List<Rennschnecke> _teilnehmendeSchnecken = new List<Rennschnecke>();
         private int _laengeStrecke;
         private Rennschnecke rennschnecke;
 
@@ -23,19 +23,37 @@ namespace Schneckenrennen.Models
 
         public void AddRennschnecke(Rennschnecke neueSchnecke)
         {
-            for (int i = 0; i < _maxAnzahlSchnecken; i++)
-            {
-                if (_teilnehmendeSchnecken[i] == null)
-                {
-                    _teilnehmendeSchnecken[i] = neueSchnecke;
-                }
-             }
+            _teilnehmendeSchnecken.Add(neueSchnecke);
+
+            //for (int i = 0; i < _teilnehmendeSchnecken.Count; i++)
+            //{
+            //    if (neueSchnecke.GetName() == _teilnehmendeSchnecken[i].GetName())
+            //    {
+            //        _teilnehmendeSchnecken.Remove(neueSchnecke);
+            //    }
+
+            //}
         }
+
+
+    
+        
 
         public string Ausgabe()
         {
-            string ausgabe = _name + " " + _maxAnzahlSchnecken + " " + _laengeStrecke + " ";
+            string ausgabe = "\nRennname: " + _name + "\n" + "Maximale Schneckenanzahl: " + _maxAnzahlSchnecken + "\n" + "Streckenlänge: " + _laengeStrecke + "\n";
             return ausgabe;
+        }
+
+        public string AusgabeSchneckenNamen()
+        {
+            string name = "";
+            foreach (Rennschnecke rennschnecke in _teilnehmendeSchnecken)
+            {
+                name = "\n" + name + rennschnecke.GetName() + "\n";
+                
+            }
+            return name;
         }
 
         public string ErmittleGewinner()
@@ -50,7 +68,7 @@ namespace Schneckenrennen.Models
                 }
                 else
                 {
-                    return null;
+                    
                 }
             }
             return null;
@@ -69,9 +87,11 @@ namespace Schneckenrennen.Models
 
         public void Durchfuehren()
         {
-            while (ErmittleGewinner == null)
+            string gewinner = ErmittleGewinner();
+            while (gewinner == null)
             {
                 LasseSchneckenKriechen();
+                gewinner = ErmittleGewinner();
             }
         }
 

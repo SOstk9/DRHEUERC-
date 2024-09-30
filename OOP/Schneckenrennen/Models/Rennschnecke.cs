@@ -57,5 +57,9 @@ namespace Schneckenrennen.Models
             _maxGeschwindigkeit = maxGeschwindigkeit;
         }
 
+        private void SetWegZurueckgelegt(int wegzurueckgelegt)
+        {
+            _wegZurueckgelegt = wegzurueckgelegt;
+        }
     }
 }

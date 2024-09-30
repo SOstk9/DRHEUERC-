@@ -21,5 +21,17 @@ namespace Schneckenrennen.Models
             _spieler = spieler;
 
         }
+        public string GetName()
+            { return _schneckenName; }
+
+        public int GetWettEinsatz()
+        {
+            return _wettEinsatz;
+        }
+
+        public string GetSpieler()
+        {
+            return _spieler;
+        }
     }
 }
