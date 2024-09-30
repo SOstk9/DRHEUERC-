@@ -14,11 +14,10 @@ namespace Schneckenrennen.Models
         private int _laengeStrecke;
         private Rennschnecke rennschnecke;
 
-        public Rennen(string name, int maxAnzahlSchnecken, Rennschnecke teilnehmendeSchnecken, int laengeStrecke)
+        public Rennen(string name, int maxAnzahlSchnecken, int laengeStrecke)
         {
             _name = name;
             _maxAnzahlSchnecken = maxAnzahlSchnecken;
-            _teilnehmendeSchnecken.Add( teilnehmendeSchnecken);
             _laengeStrecke = laengeStrecke;
         }
 
@@ -33,9 +32,10 @@ namespace Schneckenrennen.Models
              }
         }
 
-        public void Ausgabe()
+        public string Ausgabe()
         {
-
+            string ausgabe = _name + " " + _maxAnzahlSchnecken + " " + _laengeStrecke + " ";
+            return ausgabe;
         }
 
         public string ErmittleGewinner()
@@ -43,7 +43,7 @@ namespace Schneckenrennen.Models
             string gewinner;
            foreach (Rennschnecke rennschnecke in _teilnehmendeSchnecken)
             {
-                if (rennschnecke.WegZurueckgelegt() == _laengeStrecke)
+                if (rennschnecke.WegZurueckgelegt() >= _laengeStrecke)
                 {
                     gewinner = rennschnecke.GetName();
                     return gewinner;
@@ -77,8 +77,21 @@ namespace Schneckenrennen.Models
 
         public bool IstRennteilnehmer(string schneckenname)
         {
-            for ( int i = 0; i < )
-            if (schneckenname == _teilnehmendeSchnecken[i])
+
+            for (int i = 0; i < _teilnehmendeSchnecken.Count; i++)
+            {
+                if (schneckenname == _teilnehmendeSchnecken[i].GetName())
+                {
+                    return true;
+                }
+                else
+                {
+                 
+                }
+
+            }
+            return false;
+        
         }
     }
 }
