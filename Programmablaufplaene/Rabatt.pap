@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="3F13EF520884C09D">
+  <PROJECT FORMAT="1.00" NAME="Rabatt" AUTHOR="ITA5-TN15" CREATED="2024.08.28 10:06:18" MODIFIED="2024.08.28 10:12:06">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Hauptprogramm 1" CREATED="2024.08.28 10:06:41" MODIFIED="2024.08.28 10:12:06">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="11">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Hauptprogramm 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[int Stückzahl
+int Einzelpreis
+int Geasamtpreis]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Ausgabe von Stückzahl eingeben]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Eingabe von Stückzahl]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Ausgabe von Einzelpreis eingeben]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Eingabe von Einzelpreis]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[Stückzahl < 10?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[Gesamtpreis = Stückzahl * EInzelpreis]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="26">
+                <TEXT><![CDATA[Ausgabe von Gesamtpreis]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[Stückzahl > 50?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[Gesamtpreis = Stückzahl * (Einzelpreis * 0,95)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="28">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="23">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA[Gesamtpreis = Stückzahl * (Einzelpreis * 0,9)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="31">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="14" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="18" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="14" TO="16" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="19" FROM="18" TO="26" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="21" FROM="16" TO="20" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="16" TO="23" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="23" TO="22" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="27" FROM="26" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="29" FROM="20" TO="28" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="30" FROM="28" TO="26" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="32" FROM="22" TO="31" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="33" FROM="31" TO="28" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
