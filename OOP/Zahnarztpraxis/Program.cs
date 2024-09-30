@@ -16,7 +16,8 @@ namespace Zahnarztpraxis
             Console.WriteLine(ulbertus.GetKrankenkasse().AusgabeKrankenkasse());
             Console.WriteLine(herbert.AusgabePatient());
             Console.ReadLine();
-
+            //test
+            //
         }
     }
 }
