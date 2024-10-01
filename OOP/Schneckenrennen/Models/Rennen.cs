@@ -23,16 +23,20 @@ namespace Schneckenrennen.Models
 
         public void AddRennschnecke(Rennschnecke neueSchnecke)
         {
-            _teilnehmendeSchnecken.Add(neueSchnecke);
+            if (_teilnehmendeSchnecken.Count > _maxAnzahlSchnecken)
+            {
+                Console.WriteLine("Teilnehmerliste voll!");
+            }
+            else if (IstRennteilnehmer(neueSchnecke.GetName()) == false)
+            {
+                _teilnehmendeSchnecken.Add(neueSchnecke);
+            }
+            else
+            {
+                Console.WriteLine("Nimmt bereits teil!");
+                
+            }
 
-            //for (int i = 0; i < _teilnehmendeSchnecken.Count; i++)
-            //{
-            //    if (neueSchnecke.GetName() == _teilnehmendeSchnecken[i].GetName())
-            //    {
-            //        _teilnehmendeSchnecken.Remove(neueSchnecke);
-            //    }
-
-            //}
         }
 
 
@@ -58,7 +62,7 @@ namespace Schneckenrennen.Models
 
         public string ErmittleGewinner()
         {
-            string gewinner;
+           string gewinner;
            foreach (Rennschnecke rennschnecke in _teilnehmendeSchnecken)
             {
                 if (rennschnecke.WegZurueckgelegt() >= _laengeStrecke)

@@ -14,12 +14,14 @@ namespace Schneckenrennen.Models
         private List<Wetten> _angenommeneWetten = new List<Wetten>();
         private int _faktor;
         private Wetten _wette;
+        private int _wettEinsatz;
 
         public Wettbuero(Rennen rennen, int faktor, string nameWettbuero)
         {
             _rennen = rennen;
             _faktor = faktor;
             _nameWettbuero = nameWettbuero;
+            
         }
 
         public void WetteAnnehmen(Rennen rennen, string schneckenName, int wettEinsatz, string spieler)
@@ -28,20 +30,19 @@ namespace Schneckenrennen.Models
             _angenommeneWetten.Add(wette);
         }
 
-        public bool WetteGewonnen(int eintrag)
-        {   bool wetteGewonnen = false;
+        public string WetteGewonnen(int eintrag)
+        {  
 
-            int betrag = 0;
+         
             if (_angenommeneWetten[eintrag].GetName() == _rennen.ErmittleGewinner())
             {
-                Console.WriteLine("Wette gewonnen!");
-                wetteGewonnen = true; 
-                return wetteGewonnen; ;
+                double wettErgebnis = WetteErgebnis();
+                return "Wette gewonnen! Du bekommst: " + wettErgebnis; 
+
             }
             else
             {
-                Console.WriteLine("Wette verloren (Sportwetten können süchtig machen)");
-                return wetteGewonnen; ;
+                return "Wette verloren. Glücksspiel kann süchtig machen."; ;
             }
         }
 
@@ -52,10 +53,17 @@ namespace Schneckenrennen.Models
             _rennen.Durchfuehren();
         }
 
-        //public void WetteErgebnis()
-        //{
-        //    if 
-        //}
+        public double WetteErgebnis()
+        {
+            double wettergebnis = 0 ;
+            for (int i = 0; i < _angenommeneWetten.Count; i++)
+            {
+                wettergebnis = _angenommeneWetten[i].GetWettEinsatz() * _faktor;
+                
+            }
+            return wettergebnis;
+
+        }
         public string Ausgabe()
         {
 

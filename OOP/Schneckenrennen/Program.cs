@@ -20,8 +20,8 @@ namespace Schneckenrennen
             speedo.AddRennschnecke(uwe);
             speedo.AddRennschnecke(heinrich);
 
-            ////testen, ob doppelte gehen
-            //speedo.AddRennschnecke(uwe);
+            //testen, ob doppelte gehen
+            speedo.AddRennschnecke(uwe);
 
             //Wird geguckt, ob es einen Gewinner gibt, wenn es funktioniert, muss jetzt hier 0 rauskommen
             speedo.ErmittleGewinner();
@@ -31,16 +31,18 @@ namespace Schneckenrennen
             Console.WriteLine(wettbuero);
 
             //Wette platzieren
-            interWetten.WetteAnnehmen(speedo, uwe.GetName(), 10, "Markus");
+            Console.WriteLine("Bitte Wetteinsatz eingeben:");
+            interWetten.WetteAnnehmen(speedo, uwe.GetName(), int.Parse(Console.ReadLine()), "Markus");
 
             //Rennen wird gefahren
             speedo.Durchfuehren();
 
             //Gewinner wird ausgegeben
             string gewinner = speedo.ErmittleGewinner();
-            Console.WriteLine($"der Gewinner ist : {gewinner}");
+            Console.WriteLine($"der Gewinner ist: {gewinner}");
 
             //Wettergebnis
+
             Console.WriteLine(interWetten.WetteGewonnen(0));
 
 
