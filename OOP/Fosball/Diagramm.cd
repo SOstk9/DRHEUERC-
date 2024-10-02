@@ -35,5 +35,12 @@
       <FileName>Spiel.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Fosball.Aufgabe">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Aufgabe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

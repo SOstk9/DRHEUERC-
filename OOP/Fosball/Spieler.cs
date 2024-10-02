@@ -12,4 +12,8 @@ namespace Fosball
         protected int _torschuss;
         protected int _motivation;
     }
+    public Spieler(string name, int alter, int torschuss, int motivation)
+    {
+
+    }
 }
