@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GehaltsrechnerFirma_Vererbung.Models.Mitarbeiter" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIAAAAAAAAAAAAIAAAAAAAAAAIAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Models\Mitarbeiter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GehaltsrechnerFirma_Vererbung.Models.Praktikant" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAABAA=</HashCode>
+      <FileName>Models\Praktikant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GehaltsrechnerFirma_Vererbung.Models.ExternerMitarbeiter" Collapsed="true">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAABAA=</HashCode>
+      <FileName>Models\ExternerMitarbeiter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

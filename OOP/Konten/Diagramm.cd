@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Konten.Konto">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAkAAAAAAAAAAAAAAAAIEAAAAAAQAAAAEA=</HashCode>
+      <FileName>Konto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Konten.Sparkonto">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sparkonto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Konten.Festgeldkonto">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAAAAAEAAAAAA=</HashCode>
+      <FileName>Festgeldkonto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Konten.Girokonto">
+    <Position X="4.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAIAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Girokonto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Konten.Person">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAgAQAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Konten.Kategorie">
+    <Position X="4.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAQAAAAAAAAAAAAAAAAIAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kategorie.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
