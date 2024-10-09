@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Koenigreich_fuer_ein_Lama.Einwohner">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIAAIAAAAAAAgAAAAAAACAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Einwohner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Koenigreich_fuer_ein_Lama.Koenig">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Koenig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Koenigreich_fuer_ein_Lama.Adel">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Adel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Koenigreich_fuer_ein_Lama.Buerger">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Buerger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Koenigreich_fuer_ein_Lama.Leibeigener">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Leibeigener.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

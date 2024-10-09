@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Haustiere.Haustier">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAoBAAAAAAgAAAAIAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Haustier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haustiere.Hund">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAgAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hund.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haustiere.Katze">
+    <Position X="8" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAQAAAAAAAAAQgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Katze.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Haustiere.Vogel">
+    <Position X="11.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Vogel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
