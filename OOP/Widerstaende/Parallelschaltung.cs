@@ -9,8 +9,13 @@ namespace Widerstaende
     {
         public Parallelschaltung(params Widerstand[] widerstand) : base ()
         {
-          
-            this._name = ErstelleName(widerstand);
+            string _name = "Rp";
+            for (int i = 0; i < widerstand.Length; i++)
+            {
+                _name = _name + " " + widerstand[i].GetName();
+            }
+            Console.WriteLine(_name);
+            Widerstandsberechnung();
         }
 
 
@@ -28,16 +33,6 @@ namespace Widerstaende
             }
             _widerstand = 1 / zwischenstand;
             return _widerstand;
-        }
-        public string ErstelleName(params Widerstand[] widerstand)
-        {
-            string _name = "Rp";
-            for (int i = 0; i < widerstand.Length; i++)
-            {
-                _name = _name + " " + widerstand[i].GetName();
-            }
-            return _name;
-
         }
     }
 }

@@ -28,6 +28,11 @@ namespace Widerstaende
         {
             return _name;
         }
+        public double SetWiderstand(double widerstand)
+        {
+            _widerstand = widerstand;
+            return _widerstand;
+        }
 
         public void Ausgabe()
         {

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Vereinskostenstruktur.Mitglied">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAACAgAAAAEAAAAAgAAIACAAAAAg=</HashCode>
+      <FileName>Mitglied.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vereinskostenstruktur.AktivesMitglied">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AktivesMitglied.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vereinskostenstruktur.Vorstandsmitglied">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Vorstandsmitglied.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vereinskostenstruktur.Verein">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAIAAAAAAAAAABAkAAAEAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Verein.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vereinskostenstruktur.AmateurSportler">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AmateurSportler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vereinskostenstruktur.Trainer">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Trainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vereinskostenstruktur.SpitzenSportler">
+    <Position X="1.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spitzensportler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vereinskostenstruktur.UnterstuetzendesMidglied">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UnterstuetzendesMidglied.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
