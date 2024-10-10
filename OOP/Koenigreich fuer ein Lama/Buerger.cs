@@ -11,7 +11,7 @@ namespace Koenigreich_fuer_ein_Lama
         {
             _einkommen = einkommen;
             _name = name;
-            _steuerProzent = 20;
+            _steuerProzent = 10;
         }
 
         public override double ZuVersteuerndesEinkommen()

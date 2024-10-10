@@ -10,11 +10,14 @@ namespace Koenigreich_fuer_ein_Lama
     {
         double _gesamtSteuern;
 
+        public static List<Einwohner> einwohner = new List<Einwohner>();
+
         public Steuereintreiber(string name, double einkommen)
         {
             _einkommen = einkommen;
             _name = name;
             _steuerProzent = 10;
+            
         }
         public override double ZuVersteuerndesEinkommen()
         {

@@ -11,12 +11,9 @@ namespace Koenigreich_fuer_ein_Lama
         protected double _steuerProzent;
         protected string _name;
 
-        public static List<Einwohner> einwohner = new List<Einwohner>();
+        
 
-        protected Einwohner()
-        {
-            einwohner.Add(this);
-        }
+
         public void SetzeEinkommen(double einkommen)
         {
             _einkommen = einkommen;

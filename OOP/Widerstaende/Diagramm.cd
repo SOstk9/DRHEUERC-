@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Widerstaende.Widerstand">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAABAQAAAAAAAAAAAAACAAABEA=</HashCode>
+      <FileName>Widerstand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Widerstaende.Widerstandsnetz">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAACAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Widerstandsnetz.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Widerstaende.Reihenschaltung">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Reihenschaltung.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Widerstaende.Parallelschaltung">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Parallelschaltung.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

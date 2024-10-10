@@ -13,6 +13,8 @@
 
             Console.WriteLine("Euer Gnaden, hier sind die diesjährigen Steuereinnahmen des Königreiches:");
 
+
+            //Steuerfunktion wird pro Objekt ausgeführt
             double steuer = bob.Steuer();
             Console.WriteLine($"Die Steuer von dem Abfall beträgt dieses Jahr: {steuer}");
 
