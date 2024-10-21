@@ -52,7 +52,10 @@ namespace Postsendung
             
 
         }
-        public abstract void SetzeStation(Station station);
+        public virtual void SetzeStation(Station station)
+        { 
+        
+        }
 
         public abstract string ToString();
 

@@ -23,6 +23,7 @@
             //Zwischenstation wird gesetzt
             dhschnell.GetListe()[1].SetzeStation(zwischenstelle);
 
+            Console.WriteLine(dhschnell.GetListe()[1].ToString());
 
 
             Console.ReadLine();

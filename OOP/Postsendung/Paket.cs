@@ -28,10 +28,10 @@ namespace Postsendung
         {
             return _versicherung;
         }
-        public override void SetzeStation(Station station)
-        {
+        //public override void SetzeStation(Station station)
+        //{
 
-        }
+        //}
         public override string ToString()
         {
             string tanga = this.GetID().ToString() + this.GetAbsender().ToString() + this.GetEmpfaenger().ToString() + GetGewicht().ToString() + GetVersicherung().ToString();
