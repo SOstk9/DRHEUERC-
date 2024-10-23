@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Generics.Flasche&lt;T&gt;">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEACAAAAAIIAAAAAAAAA=</HashCode>
+      <FileName>Flasche.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generics.Bier">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAQAAAA=</HashCode>
+      <FileName>Bier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generics.Wein">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Wein.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generics.Rotwein">
+    <Position X="10.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rotwein.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generics.Weißwein">
+    <Position X="8" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weißwein.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Generics.Getränk">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Getränk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
