@@ -1,26 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
 
 namespace SimpleList
 {
-    public class SimpleList<T> where T : IComparable 
+    public class SimpleList<T> where T : IComparable
     {
         Element<T> first;
         Element<T> last;
         Element<T> element;
-      
 
-        public SimpleList()
+
+        public SimpleList(Element<T> name)
         {
-
+            first = name;
         }
 
         public void Add(Element<T> item)
         {
-            
+
 
             if (first == null)
             {
@@ -31,24 +27,19 @@ namespace SimpleList
                 last.SetNext(item);
                 last = item;
             }
-            else
-            {
-                last.SetNext(item);
-                last = item;
-            }
-            //return el1;
 
-              
 
-            }
-           
-        
+
+        }
+
+
 
         public void DeleteList()
         {
-            foreach (var item in this)
+            first = null;
+            while (last != null)
             {
-
+                last = null;
             }
 
         }
@@ -66,7 +57,7 @@ namespace SimpleList
 
         public void CreateArrayFromList()
         {
-            
+
             foreach (var item in this)
             {
 

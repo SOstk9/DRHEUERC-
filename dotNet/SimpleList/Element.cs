@@ -10,8 +10,6 @@ namespace SimpleList
         public Element(T first)
         {
             _first = first;
-         
-
         }
 
         public void SetNext(Element<T> neu)

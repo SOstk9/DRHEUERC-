@@ -17,9 +17,11 @@ namespace SimpleList
             Element<string> vier = new Element<string>("vier");
             Element<string> fuenf = new Element<string>("fünf");
 
-            SimpleList<Element<string>> liste = new SimpleList<Element<string>>();
-
-            liste.Add(eins);
+            SimpleList<string> liste = new SimpleList<string>(eins);
+            liste.Add(zwei);
+            liste.Add(drei);
+            liste.Add(vier);
+            liste.Add(fuenf);
 
 
         }
