@@ -12,6 +12,19 @@ namespace SimpleList
             _first = first;
         }
 
+        public T First
+        {
+            get { return _first; }
+            
+        }
+
+        public Element<T> Next
+        {
+            get { return _next; }
+            set { _next = value; }
+        }
+
+
         public void SetNext(Element<T> neu)
         {
             _next = neu;
