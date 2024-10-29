@@ -15,7 +15,19 @@ namespace BinarySearch
             name.Insert(50);
             name.Insert(100);
             name.Insert(10);
+            name.Insert(1);
+            name.Insert(10);
+            name.Insert(75);
+            name.Insert(65);
+            name.Insert(85);
+            name.Insert(61);
+            name.Insert(45);
+            name.Insert(35);
+            name.Insert(15);
 
+
+
+            name.PrintInorder();
             Console.ReadLine();
             
 
