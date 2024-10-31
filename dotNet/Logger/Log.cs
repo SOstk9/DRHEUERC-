@@ -11,7 +11,7 @@ namespace Logger
     {
 
         string _log;
-        string _zielpfad;
+        static string _zielpfad;
 
         public Log (string zielpfad)
         {
@@ -19,7 +19,7 @@ namespace Logger
 
         }
 
-        public void Schreiben(string log)
+        public static void Schreiben(string log)
         {
             File.AppendAllText(_zielpfad, log);
         }

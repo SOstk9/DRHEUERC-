@@ -7,9 +7,10 @@
         {
             Log loggo = new Log("D:\\Arschloch.txt");
 
-            LogHandler lh = loggo.Schreiben;
+            LogHandler lh = Log.Schreiben;
             LogHandler lhs = Lesen;
-
+            
+         lh("hallo");
          lhs("D:\\Arschloch.txt");
 
 
