@@ -50,6 +50,7 @@ namespace SimpleList
                 }
                 neu = neu.Next;
             }
+            Console.WriteLine("Ist nicht in der Liste vorhanden");
             return false;
             
         }
