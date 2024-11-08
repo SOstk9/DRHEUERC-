@@ -26,9 +26,22 @@
 
             var atall = numberss.Reverse();
 
-            DirectoryInfo dir = new DirectoryInfo("C:\\Users\\ITA5 - TN15\\OneDrive - IT - Akademie Dr.Heuer GmbH\\");
-            Console.WriteLine(dir.EnumerateFiles());
+            DirectoryInfo dir = new DirectoryInfo("C:\\Users\\ITA5-TN15\\OneDrive - IT-Akademie Dr. Heuer GmbH\\");
+            var moin = dir.EnumerateFiles().OrderByDescending(x => x.Name);
+            var größte = dir.EnumerateFiles().OrderByDescending(x => x.Length);
 
+            var letzterZugriff = dir.EnumerateFiles().OrderBy(x => x.LastAccessTime);
+
+
+            var ersteFünf = numbers.Take(5);
+            var letzteFünf = numbers.TakeLast(5);
+
+
+            var ersteletzte = numbers.Skip(1).SkipLast(3);
+
+            var größerNull = numbers.Select(x => x > 0);
+
+            var nach12 = numbers.SkipWhile(x => x != 12).Skip(1);
 
 
             }

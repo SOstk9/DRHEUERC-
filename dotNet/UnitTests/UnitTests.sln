@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests.csproj", "{BEEFA883-F9C0-4D4A-AADF-9E635F64D05C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroßbuchstabenTest", "..\GroßbuchstabenTest\GroßbuchstabenTest.csproj", "{CCB72EBC-E187-4246-9620-3E026C1BD5C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEEFA883-F9C0-4D4A-AADF-9E635F64D05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEFA883-F9C0-4D4A-AADF-9E635F64D05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEFA883-F9C0-4D4A-AADF-9E635F64D05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEFA883-F9C0-4D4A-AADF-9E635F64D05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB72EBC-E187-4246-9620-3E026C1BD5C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB72EBC-E187-4246-9620-3E026C1BD5C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB72EBC-E187-4246-9620-3E026C1BD5C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB72EBC-E187-4246-9620-3E026C1BD5C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34DAD3B1-8840-4878-AC5E-5FC75B5474C1}
+	EndGlobalSection
+EndGlobal
