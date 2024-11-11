@@ -20,25 +20,43 @@ namespace GithubPi
             //Liste, in der die Tasks später gesammelt werden, um parallel laufen zu können
             List<Task<double>> tasks = new List<Task<double>>();
 
-            //Stoppuhr starten
+            //Stoppuhr starten und Zeit mit einem Thread ausgeben
+            #region
             sw.Start();
 
+            for (int i = 0; i < anzahlAufrufe; i++)
+            {
+
+                pi += PI_Berechnung(i, anzahlAufrufe);
+
+            }
+            Console.WriteLine(pi);
+            pi = 0;
+            sw.Stop();
+            Console.WriteLine("Dauer {0:N0} Millisekunden", sw.ElapsedMilliseconds);
+            #endregion
+
+
+
+            //Neustart der Zeit
+            sw.Reset();
+            sw.Start();
 
             //Tasks werden erstellt und der Liste hinzugefügt
             for (int i = 0; i < anzahlAufrufe; i++)
             {
-               
-               task = Task.Run(() => PI_Berechnung(i, anzahlAufrufe));
-               tasks.Add(task);
+
+                task = Task.Run(() => PI_Berechnung(i, anzahlAufrufe));
+                tasks.Add(task);
 
             }
-            
+
             //Es wird gewartet, bis alle Tasks ausgeführt sind
             Task.WaitAll(tasks.ToArray());
 
 
             //in der später ausgegebenen Variable Pi werden die Ergebnisse der einzelnen Tasks addiert
-            foreach(Task<double> t in  tasks)
+            foreach (Task<double> t in tasks)
             {
                 pi += t.Result;
             }
@@ -50,8 +68,7 @@ namespace GithubPi
 
             //Ausgabe Pi
             Console.WriteLine(pi);
-
-            Console.WriteLine("Dauer {0:N0} Millisekunden", sw.ElapsedMilliseconds);
+            Console.WriteLine($"Dauer{sw.ElapsedMilliseconds} Millisekunden");
         }
 
 
