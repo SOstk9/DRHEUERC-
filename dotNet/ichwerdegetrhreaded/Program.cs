@@ -4,19 +4,57 @@
     {
         static void Main(string[] args)
         {
-            //Task.Run(() =>
-            //{
-                Console.WriteLine("Welche Datei auslesen?");
-                string eingabe = Console.ReadLine();
-                string text = DateiAuslesen(eingabe + ".txt");
+            Task task = new Task(() =>
+            {
+                {
+                    Console.WriteLine("Welche Datei auslesen? Task1");
+                    string eingabe = Console.ReadLine();
+                    string text = DateiAuslesen(eingabe + ".txt");
 
 
-                Dictionary<char, int> dict = BuchstabenZaehlen(text);
+                    Dictionary<char, int> dict = BuchstabenZaehlen(text);
 
-                DictionaryAuslesen(dict);
+                    Console.WriteLine(DictionaryAuslesen(dict));
 
-                File.WriteAllText($"{eingabe}.freq", DictionaryAuslesen(dict));
-            //});
+                    File.WriteAllText($"{eingabe}.freq", DictionaryAuslesen(dict));
+                }
+            });
+            Task task2 = new Task(() =>
+            {
+                {
+                    Console.WriteLine("Welche Datei auslesen? Task2");
+                    string eingabe = Console.ReadLine();
+                    string text = DateiAuslesen(eingabe + ".txt");
+
+
+                    Dictionary<char, int> dict = BuchstabenZaehlen(text);
+
+                    Console.WriteLine(DictionaryAuslesen(dict));
+
+                    File.WriteAllText($"{eingabe}.freq", DictionaryAuslesen(dict));
+                }
+            });
+            Task task3 = new Task(() =>
+            {
+                {
+                    Console.WriteLine("Welche Datei auslesen? Task3");
+                    string eingabe = Console.ReadLine();
+                    string text = DateiAuslesen(eingabe + ".txt");
+
+
+                    Dictionary<char, int> dict = BuchstabenZaehlen(text);
+
+                    Console.WriteLine(DictionaryAuslesen(dict));
+
+                    File.WriteAllText($"{eingabe}.freq", DictionaryAuslesen(dict));
+                }
+            });
+
+
+            task.RunSynchronously();
+            task2.RunSynchronously();
+            task3.RunSynchronously();
+            
 
       
         }
